@@ -140,7 +140,7 @@ body a:hover {
 	padding: 100px 0;
 }
 .p80 {
-	padding: 80px 0;
+	padding: 40px 0;
 }
 .p80top {
 	padding: 80px 0 0;
@@ -2171,23 +2171,23 @@ header .navbar-toggler {
 	padding: 8px 15px;
 	background: #66bb6a;
 }
-/*****************  WHY Ecova  ****************/
+/*****************  WHY JS  ****************/
 
-.why-ecova {
+.why-js {
 	background: url(../images/bg.jpg) no-repeat;
 	padding: 65px 0 65px;
 	
 	background-size: cover;
 	text-align: center;
 }
-.why-ecova h1 {
+.why-js h1 {
 	color: #fff;
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	margin: 0 0 10px;
 	font-weight: 700;
 }
-.why-ecova p {
+.why-js p {
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
@@ -2211,16 +2211,16 @@ header .navbar-toggler {
 .cus:hover {
 	color: #fff;
 }
-.why-ecova .counter li {
+.why-js .counter li {
 	width: 50%;
 }
-.why-ecova .counter p.counter-count {
+.why-js .counter p.counter-count {
 	font-size: 48px;
 	font-weight: 700;
 	margin: 0;
 	position: relative;
 }
-.why-ecova .counter p.ctxt {
+.why-js .counter p.ctxt {
 	font-size: 18px;
 	margin: 0;
 	font-weight: 400;

@@ -61,10 +61,61 @@
         
       /* background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);*/
       }
-      .product h4 {
+      .product h5 {
          margin: 10px 0;
+         padding: 10px;
+         background-color: rgba(243, 236, 236, 0.7);
+         color: rgb(0, 0, 0);
+         position: absolute;
+         bottom: 0;
+         width: 100%;
       }
+/* Set a fixed height for the product images */
+         .pro-box img {
+         max-height: 200px; /* Set the maximum height for the images */
+         width: 100%; /* Maintain the aspect ratio */
+         object-fit: cover; /* Crop the images to fit the container without distortion */
+         }
 
+         /* Arrange the project boxes in a grid */
+         .projects-grid-two {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 20px;
+         }
+
+         /* Style for the project boxes */
+         .pro-box {
+         border: 1px solid #ccc;
+         border-radius: 0.6em;
+         overflow: hidden; /* Hide overflowing content */
+         position: relative;
+         }
+
+         .pro-box h5 {
+         margin: 10px 0;
+         padding: 10px;
+         background-color: rgba(243, 236, 236, 0.7);
+         color: rgb(0, 0, 0);
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+         }
+
+         .pro-box .pro-hover {
+         display: none;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         background-color: rgba(255, 249, 249, 0.9);
+         padding: 20px;
+         color: rgb(0, 0, 0);
+         }
+
+         .pro-box:hover .pro-hover {
+         display: block;
+         }
       .product p {
          max-height: 80px; /* Set a maximum height for the description */
          overflow: hidden; /* Hide overflowing content */
@@ -91,7 +142,9 @@
          cursor: pointer;
          transition: 0.3s;
          background-color: #ffffff;
-        text-align: center;
+         text-align: center;
+         overflow: hidden; /* Hide overflowing content */
+         position: relative;
       }
 
       .product img {
@@ -335,7 +388,7 @@
                   </div>
                   <div class="col-md-7">
                      <div class="h2-about-txt">
-                        <h3>About JS Hye Meta</h3>
+                        <h3>About J.S.HyE-META</h3>
                         <h2>Eco-friendly products from Agricultural Waste.</h2>
                         <p> At HyE-META, we aim to be a global leader in engineering eco-friendly hybrid composite materials and sustainable product services for Electronics, Aerospace and Défense, Automobiles, Agriculture, Packaging, Structural and Civil industries.</p>
                         <a class="aboutus" href="about.html">More About us</a> 
@@ -379,25 +432,110 @@
          <section class="wf100 p80 current-projects">
          <div class="container">
            <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="width:100%; Margin: 0 0 32px 0;">
                 <div class="section-title-2">
-                    <h5>We are working on these</h5>
-                    <h2>Current Projects</h2>
+                    <h5>Visit Our Product</h5>
+                    <h2>Target Sectors</h2>
                 </div>
             </div>
-            </div>
-             <div class="Product-Catelog">
-               <div class="categories-container">
-              <button class="category-btn" onmouseover="showProducts(1)">Agriculture</button>
-              <button class="category-btn" onmouseover="showProducts(2)">Architecture</button>
-              <button class="category-btn" onmouseover="showProducts(3)">Transportation</button>
-              <button class="category-btn" onmouseover="showProducts(4)">Packaging & Others</button>
-            </div>
+              <div class="projects-grid-two">
+               <div class="container">
+                  <div class="row">
+              <!--Project box Start-->
+                     <div class="col-md-4 col-sm-6">
+                        <div class="pro-box">
+                           <img src="images/TargetSectors/Electronics.jpg" alt="" >
+                                    <h5>ELECTRONICS</h5>
+                                    <div class="pro-hover">
 
-                <div class="products-container" id="products-container">
-              <!-- Products will be displayed here -->
-                </div>
-             </div>
+                                       <p>Experience innovation and sustainability with our cutting-edge eco-friendly circuit boards, designed to enhance electronic performance while minimizing environmental impact. Harness advanced technology while supporting a greener tomorrow.</p>
+                                       <a href="electronic-products.html">Read More</a>
+                                    </div>
+                        </div>
+                     </div>
+                     <!--Project box End-->
+                     <!--Project box Start-->
+                     <div class="col-md-4 col-sm-6">
+                        <div class="pro-box">
+                           <img src="images/TargetSectors/Aerospace.jpg" alt="">
+                                    <h5>AEROSPACE</h5>
+                                    <div class="pro-hover">
+                                       <!--<h6>Recycling & Waste Management</h6>-->
+                                       <p>Elevate your projects with our eco-conscious insulators, combining top-tier electrical insulation with a commitment to a cleaner planet. Discover durable solutions that prioritize both performance and sustainability.</p>
+                                       <a href="transportation-aerospace-products.html">Read More</a>
+                                    </div>
+                        </div>
+                     </div>
+                     <!--Project box End-->
+                     <!--Project box Start-->
+                     <div class="col-md-4 col-sm-6">
+                        <div class="pro-box">
+                            <img src="images/TargetSectors/Automotive.jpg" alt="">
+                                    <h5>AUTOMOTIVE</h5>
+                                    <div class="pro-hover">
+<!--                                       <h6>Solar & Wind Energy </h6>-->
+                                       <p>Revolutionize your machinery with our precision-engineered eco-friendly gears, seamlessly merging mechanical excellence with environmental responsibility. Unlock smooth operations and a reduced carbon footprint in one powerful package.</p>
+                                       <a href="transportation-automotive-products.html">Read More</a>
+                                    </div>
+                        </div>
+                     </div>
+                        <!--Project box End-->
+                     <!--Project box Start-->
+                     <div class="col-md-4 col-sm-6">
+                        <div class="pro-box">
+                           <img src="images/TargetSectors/Architecture.jpg" alt="" >
+                                    <h5>ARCHITECTURE</h5>
+                                    <div class="pro-hover">
+
+                                       <p>Experience innovation and sustainability with our cutting-edge eco-friendly circuit boards, designed to enhance electronic performance while minimizing environmental impact. Harness advanced technology while supporting a greener tomorrow.</p>
+                                       <a href="architecture-products.html">Read More</a>
+                                    </div>
+                        </div>
+                     </div>
+                     <!--Project box End-->
+                     <!--Project box Start-->
+                     <div class="col-md-4 col-sm-6">
+                        <div class="pro-box">
+                           <img src="images/TargetSectors/Agriculture.jpg" alt="">
+                                    <h5>AGRICULTURE</h5>
+                                    <div class="pro-hover">
+                                       <!--<h6>Recycling & Waste Management</h6>-->
+                                       <p>Elevate your projects with our eco-conscious insulators, combining top-tier electrical insulation with a commitment to a cleaner planet. Discover durable solutions that prioritize both performance and sustainability.</p>
+                                       <a href="agriculture-products.html">Read More</a>
+                                    </div>
+                        </div>
+                     </div>
+                     <!--Project box End-->
+                     <!--Project box Start-->
+                     <div class="col-md-4 col-sm-6">
+                        <div class="pro-box">
+                            <img src="images/TargetSectors/Packaging.jpg" alt="">
+                                    <h5>PACKAGING & OTHER</h5>
+                                    <div class="pro-hover">
+<!--                                       <h6>Solar & Wind Energy</h6>-->
+                                       <p>Revolutionize your machinery with our precision-engineered eco-friendly gears, seamlessly merging mechanical excellence with environmental responsibility. Unlock smooth operations and a reduced carbon footprint in one powerful package.</p>
+                                       <a href="packaging&other-products.html">Read More</a>
+                                    </div>
+                        </div>
+                     </div>
+                        <!--Project box End-->
+                     </div>
+                  </div>
+              </div>
+                     </div>
+            </div>
+<!--             <div class="Product-Catelog">-->
+<!--               <div class="categories-container">-->
+<!--              <button class="category-btn" onmouseover="showProducts(1)">Agriculture</button>-->
+<!--              <button class="category-btn" onmouseover="showProducts(2)">Architecture</button>-->
+<!--              <button class="category-btn" onmouseover="showProducts(3)">Transportation</button>-->
+<!--              <button class="category-btn" onmouseover="showProducts(4)">Packaging & Others</button>-->
+<!--            </div>-->
+
+<!--                <div class="products-container" id="products-container">-->
+<!--              &lt;!&ndash; Products will be displayed here &ndash;&gt;-->
+<!--                </div>-->
+<!--             </div>-->
          </section>
          <!--Current Projects End--> 
          <!--News & Articles Start-->
@@ -460,7 +598,7 @@
          </section>
          <!--News & Articles End--> 
          <!--Why Ecova + Facts Start-->
-         <section class="why-ecova wf100" >
+         <section class="why-js wf100" >
             <div class="container" >
                <div class="row">
                   <div class="col-md-12">
@@ -553,7 +691,7 @@
             <div class="footer-copyr wf100">
                <div class="container">
                   <div class="row">
-                     <div class="col-md-4 col-sm-4"> <img src="images/jshyemeta.png" style="height:130%" alt=""> </div>
+                     <div class="col-md-4 col-sm-4"> <img src="images/jshyemeta.png" alt=""> </div>
                      
                   </div>
                </div>
@@ -622,7 +760,7 @@ function showProducts(categoryId) {
     productDiv.html(`
       
       <img src="${product.image}" alt="${product.name}"> 
-      <h3>${product.name}</h3>
+      <h5>${product.name}</h5>
       <p>${product.description}</p>
       <a href="#" class="read-more">Read More</a>
     `);
