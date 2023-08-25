@@ -314,12 +314,12 @@ Inner Header Start
 *********************************/
 
 .inner-header {
-	background: url(../images/bg2.jpg)  ;
+	background: url(../images/about.jpg);
 	background-size: 100%;
   	background-position: center center;
 }
 .inner-header h1 {
-	color: #fff;
+	color: #000000;
 	margin: 0 0 20px;
 	font-weight: 700;
 }
@@ -334,7 +334,7 @@ Inner Header Start
 }
 .inner-header ul li:after {
 	content: " : : ";
-	color: #fff;
+	color: #000000;
 	margin: 0 10px;
 	font-size: 24px;
 }
@@ -342,7 +342,7 @@ Inner Header Start
 	display: none;
 }
 .inner-header ul li a {
-	color: #fff;
+	color: #000000;
 	font-weight: 400;
 	font-size: 24px;
 }
@@ -1481,10 +1481,10 @@ header.header-style-2 .navbar {
 	margin: 0px;
 }
 header.header-style-2 .navbar-brand {
-	background: #33691e;
-	width: 270px;
+	background: #ffffff;
+	width: 320px;
 	text-align: center;
-	padding: 13px 0;
+	padding: 0 13px;
 	margin-right: 100px;
 }
 ul.topnav-right {
@@ -1686,7 +1686,6 @@ section.services-area ul li.active:after {
 	height: 124px;
 	background: #fff;
 	border: 2px solid #e6e6e6;
-	content: "";
 }
 .counter-box p.counter-count {
 	position: relative;
@@ -1703,8 +1702,7 @@ section.services-area ul li.active:after {
 	position: relative;
 	z-index: 99;
 	color: #888888;
-	font-weight: 400;
-	font-size: 18px;
+	font-size: 21px;
 }
 .video-img {
 	width: 100%;
@@ -5751,17 +5749,17 @@ About Us Page
 
 .about-video-img {
 	width: 485px;
-	float: left;
+	float: right;
 	position: relative;
 	margin-top: 40px;
 }
 .about-video-img:after {
 	position: absolute;
-	right: -40px;
-	top: -40px;
-	width: 390px;
-	height: 480px;
-	border: 15px solid #e8f5e9;
+	right: -15px;
+	top: -15px;
+	width: 515px;
+	height: 311px;
+	border: 15px solid #d9ebe6;
 	content: "";
 	background: #fff;
 	z-index: -1;
