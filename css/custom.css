@@ -1309,7 +1309,7 @@ Home Page Content End
 Footer Start
 *********************************/
 .footer {
-	background: url(../images/footerbg.jpg) no-repeat;
+	background: url(../images/h2-slide1.jpg) no-repeat;
 	width: 100%;
 	float: left;
 	padding: 60px 0 0;
@@ -1327,7 +1327,7 @@ Footer Start
 	font-weight: 600;
 }
 .footer-widget a, .footer-widget p {
-	color: #cccccc;
+	color: #ffffff;
 }
 .footer-widget a:hover {
 	color: #9ccc65;
@@ -1481,7 +1481,7 @@ header.header-style-2 .navbar {
 	margin: 0px;
 }
 header.header-style-2 .navbar-brand {
-	background: #ffffff;
+	background: #285e20;
 	width: 320px;
 	text-align: center;
 	padding: 0 13px;
