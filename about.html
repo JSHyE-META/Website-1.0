@@ -27,10 +27,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"/>
       <style>
         .about-section {
             background-color: #f2f2f2;
@@ -96,6 +94,11 @@ width: 303px;
 .card:hover h3 {
     color: #ffffff;
 }
+.modal-content {
+  height: 550px;
+  width:550px;
+}
+
 .icons {
   width: 50%;
   min-width: 180px;
@@ -217,9 +220,26 @@ width: 303px;
                            <a href="#">Contact Us</a> 
                         </div>
                      </div>
+                     
                      <div class="col-lg-6">
-                         <div class="about-video-img" data-aos="fade-left"> <a href="https://www.youtube.com/watch?v=IA9O9YUbQew&t=10s" data-rel="prettyPhoto" title="Vimeo video"><i class="fas fa-play"></i></a> <img src="images/about.png" alt=""> </div>
+                        <div class="about-video-img" data-aos="fade-left">
+                           <img src="images/about.png" alt="About">
+                           <a href="https://www.youtube.com/watch?v=IA9O9YUbQew&t=10s" data-toggle="modal" data-target="#videoModal">
+                              <i class="fas fa-play"></i>
+                           </a>
+                        </div>
                      </div>
+
+               <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-body">
+                     <iframe src="https://www.youtube.com/embed/IA9O9YUbQew?autoplay=1&start=10" frameborder="0" height="500px" width="500px" allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>
+               </div>
+
                   </div>
                </div>
             </div>
